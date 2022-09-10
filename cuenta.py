@@ -1,5 +1,7 @@
 import contacto
-
+import email
+import correo
+import correoRec
 
 class Cuenta():
     userName = "mnb"
@@ -12,12 +14,39 @@ class Cuenta():
 
 
     def addContact (self):
-        newContacto = contacto.Contacto()   
+        newContacto = contacto.Contacto  
         self.contactos.append(newContacto)
 
     def listContact (self):
         for i in range(len(self.contactos)):
             self.contactos[i].printContact()
+
+    def addReceived (self):
+        newReceived = correoRec.CorreoRec()
+        self.recibidos.append(newReceived)
+
+    def addSent (self):
+        newSent = correo.Correo()
+        self.enviados.append(newSent)
+
+    def totalEnv (self):
+        print("EL total de enviados son: ", len(self.enviados))
+
+    def totalRec (self):
+        print("El total de recibidos son: ", len(self.recibidos))
+
+    def totales (self):
+        print("El total de emails es de: " , len(self.enviados) + len(self.recibidos))
+
+
+
+
+
+
+    
+
+
+    
     
         
 

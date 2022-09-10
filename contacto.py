@@ -1,3 +1,4 @@
+
 class Contacto():
     name = ""
     dir = ""
