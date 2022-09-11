@@ -38,8 +38,12 @@ class Cuenta():
     def totales (self):
         print("El total de emails es de: " , len(self.enviados) + len(self.recibidos))
 
-
-
+    def notRead (self):
+        i = 0
+        for j in range(len(self.recibidos)):
+            if self.recibidos[i].leido == False:
+                i += 1
+        print("Hay ", i, " Mensajes no leidos")
 
 
 

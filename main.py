@@ -17,3 +17,5 @@ myAccount.addReceived()  # Agrega un correo recibido  ((SOLO 1 DESTINO))
 myAccount.totalRec()  # Imprime el total de mails recibidos
 myAccount.totales()  # Imprime el total de mails
 
+myAccount.notRead() # Imprime el total de no leidos ((TESTEAR))
+
