@@ -14,7 +14,7 @@ class Cuenta():
 
 
     def addContact (self):
-        newContacto = contacto.Contacto  
+        newContacto = contacto.Contacto()  
         self.contactos.append(newContacto)
 
     def listContact (self):
@@ -45,6 +45,8 @@ class Cuenta():
                 i += 1
         print("Hay ", i, " Mensajes no leidos")
 
+    def totalContacts (self):
+        print("Hay ", len(self.contactos) , " Contactos")
 
 
     
